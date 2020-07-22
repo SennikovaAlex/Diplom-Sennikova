@@ -1,5 +1,9 @@
 const burgerMenu = () => {
-    console.log(2);   
+    const clubSelectButton = document.querySelector('.club-select');
+    const clubSelect = clubSelectButton.querySelector('ul');
+    console.log(clubSelect);
+
+
 };
 
 export default burgerMenu;
