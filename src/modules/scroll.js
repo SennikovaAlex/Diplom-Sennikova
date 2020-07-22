@@ -2,7 +2,6 @@ const scrollAction = () => {
     let clientWidth = document.documentElement.clientWidth;
     const topMenu = document.querySelector('.top-menu');
     const arrow = document.getElementById('totop');
-    console.log(arrow);
     arrow.style.display = 'none';
 
     
