@@ -1,6 +1,7 @@
 const path = require('path');
 
-module.export ={
+
+module.exports = {
     entry: {
         main: './src/index.js'
     },
@@ -13,12 +14,11 @@ module.export ={
         overlay: true
     },
     module: {
-        rules: [
-        {
+        rules: [{
             test: /\.js$/,
             loader: 'babel-loader',
-            exclude: '/node_modules/'
-        }
-    ]
+            exclude: '/node_modules/'}
+]
     }
+
 };
