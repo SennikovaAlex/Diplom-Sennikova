@@ -12,8 +12,11 @@ import scrollAction from './modules/scroll';
 import showModalWindow from './modules/showForms';
 import actionGift from './modules/gift';
 import burgerMenu from './modules/burgerMenu';
+import calc from './modules/calc';
+
 
 chooseClub();
+calc();
 burgerMenu();
 scrollAction();
 showModalWindow(freeVisit, freeVisitForm);
