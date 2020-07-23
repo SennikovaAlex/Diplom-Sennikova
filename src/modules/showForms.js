@@ -1,6 +1,5 @@
 const showModalWindow = (button, moduleForm) => {
     const form = document.querySelector(`#${moduleForm}`);
-    const body = document.querySelector('body');
     button.addEventListener('click', () => {               
             form.style.display = 'inline';       
     })

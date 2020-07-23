@@ -3,7 +3,6 @@ const actionGift = () => {
     const giftModalWindow = document.querySelector('#gift');
     if (gift !== null) {   
         gift.addEventListener('click', () => {
-            console.log(giftModalWindow)
             giftModalWindow.style.display = 'inline';
             gift.parentNode.removeChild(gift);
 
