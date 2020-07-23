@@ -7,12 +7,15 @@ const callBackForm = 'callback_form';
 
 
 
-import burgerMenu from './modules/burgerMenu';
+import chooseClub from './modules/chooseClub';
 import scrollAction from './modules/scroll';
 import showModalWindow from './modules/showForms';
+import actionGift from './modules/gift';
+import burgerMenu from './modules/burgerMenu';
 
-
+chooseClub();
 burgerMenu();
 scrollAction();
 showModalWindow(freeVisit, freeVisitForm);
 showModalWindow(callbackBtn, callBackForm);
+actionGift();
