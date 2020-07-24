@@ -13,8 +13,14 @@ import showModalWindow from './modules/showForms';
 import actionGift from './modules/gift';
 import burgerMenu from './modules/burgerMenu';
 import calc from './modules/calc';
+import sendForms from './modules/sendForms';
 
 
+sendForms('footer_form');
+sendForms('card_order');
+sendForms('banner-form');
+sendForms('form2');
+sendForms('form1');
 chooseClub();
 calc();
 burgerMenu();

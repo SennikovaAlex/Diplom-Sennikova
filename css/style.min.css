@@ -2673,6 +2673,7 @@ p.personal-data input[type=checkbox]:checked+label:before {
 ul.active {
     display: inline
 }
+
 .no-active {
     display: block
 }
