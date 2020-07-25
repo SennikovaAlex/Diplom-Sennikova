@@ -84,7 +84,6 @@ const fotoGallary = () => {
 
         } else if (target.closest('BUTTON') || target.closest('LI')) {
             const buttons = document.querySelectorAll('.dotBtn')
-            console.log(buttons)
             buttons.forEach((elem, index) => {
                 if (elem === target) {
                     currentSlide = index;

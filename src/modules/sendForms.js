@@ -1,7 +1,5 @@
 const sendForms = (formSelect) => {
-    const errorMessage = 'Что-то пошло не так',
-    loadMessage = 'Загрузка ...',
-    successMesage = 'Спасибо! Мы скоро с Вами свяжемся';
+    const errorMessage = 'Что-то пошло не так';
 
 const form = document.getElementById(formSelect);
 const statusMessage = document.createElement('div');
@@ -16,7 +14,6 @@ phoneInputs.addEventListener('input', () =>{
 });
 
 const textInputs = form.querySelectorAll('[type="text"]');
-console.log(textInputs);
 textInputs.forEach((elem) => {
     if(elem !== null && !elem.classList.contains('promocodeText')) {
         elem.addEventListener('input', () =>{
@@ -32,12 +29,6 @@ textInputs.forEach((elem) => {
 })
 
 
-
-// const messageInputs = document.querySelector('#form2-message');
-// messageInputs.addEventListener('input', () =>{
-//     messageInputs.value = messageInputs.value.replace(/[^А-Яа-я\s]/g, '');
-// });
-
 form.addEventListener('submit', (event) => {
     const dataPricessing = form.querySelector('.data-processing');
     
@@ -51,6 +42,8 @@ form.addEventListener('submit', (event) => {
                     if (form.classList.contains('black')) {
                         statusMessage.style.cssText = 'font-size: 2rem; color: black';
                     }
+                    // statusMessage.classList.add('loader'); 
+                    
                    
                 } else {
                     statusMessage.textContent = '';
@@ -59,12 +52,13 @@ form.addEventListener('submit', (event) => {
                     if (form.classList.contains('black')) {
                         statusMessage.style.cssText = 'font-size: 2rem; color: black';
                     }
+                    // statusMessage.classList.remove('loader');
+                    // statusMessage.classList.add('loader');
+                    
                 }
         
                 const formData = new FormData(form);
-                let body = {};
-                console.log(body)
-        
+                let body = {};        
                 for (let val of formData.entries()) {
                     body[val[0]] = val[1];
         
@@ -197,6 +191,3 @@ const postData = (body) => {
 
 
 export default sendForms;
-
-// free-visit-form
-// callback-form
