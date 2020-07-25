@@ -14,9 +14,9 @@ import actionGift from './modules/gift';
 import burgerMenu from './modules/burgerMenu';
 import calc from './modules/calc';
 import sendForms from './modules/sendForms';
+import slider from './modules/slider';
 
-
-
+slider();
 chooseClub();
 calc();
 burgerMenu();
