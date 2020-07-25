@@ -21,8 +21,14 @@ textInputs.forEach((elem) => {
     if(elem !== null && !elem.classList.contains('promocodeText')) {
         elem.addEventListener('input', () =>{
             elem.value = elem.value.replace(/[^А-Яа-я\s]/g, '');
+            
     });
-}
+    } else if (elem !== null && elem.classList.contains('promocodeText')) {
+        elem.addEventListener('input', () =>{
+            form.querySelector('.promoHidden').value = elem.value;
+            
+        });  
+    }
 })
 
 
