@@ -324,21 +324,31 @@
     <h2>Фотогалерея</h2>
     <div class="gallery-bg">
         <div class="wrapper">
-            <div class="gallery-slider">
-                <div class="slide">
-                    <img src="images/gallery/photo1.jpg" alt="">
+            <div class="gallery-slider" style="position: relative">
+                <div class="slide-fg">
+                    <img src="images/gallery/photo1.jpg" alt="" class="img-content">
                 </div>
-                <div class="slide">
-                    <img src="images/gallery/photo2.jpg" alt="">
+                <div class="slide-fg" style = "display: none">
+                    <img src="images/gallery/photo2.jpg" alt="" class="img-content">
                 </div>
-                <div class="slide">
-                    <img src="images/gallery/photo3.jpg" alt="">
+                <div class="slide-fg" style = "display: none">
+                    <img src="images/gallery/photo3.jpg" alt="" class="img-content">
                 </div>
-                <div class="slide">
-                    <img src="images/gallery/photo4.jpg" alt="">
+                <div class="slide-fg" style = "display: none">
+                    <img src="images/gallery/photo4.jpg" alt="" class="img-content">
                 </div>
-                <div class="slide">
-                    <img src="images/gallery/photo5.jpg" alt="">
+                <div class="slide-fg" style = "display: none">
+                    <img src="images/gallery/photo5.jpg" alt="" class="img-content">
+                </div>
+                <div class="slider-arrow prev" id="prev">
+                    <span>
+                        <i class="fa fa-angle-left"></i>
+                    </span>
+                </div>
+                <div class="slider-arrow next" id="next">
+                    <span>
+                        <i class="fa fa-angle-right"></i>
+                    </span>
                 </div>
             </div>
         </div>
@@ -453,7 +463,7 @@
                         <div class="choose-club">
                             <h5>Выбрать клуб</h5>
                             <div class="club">
-                                <input type="radio" id="footer_leto_mozaika" name="club-name" value="mozaika"><label
+                                <input type="radio" id="footer_leto_mozaika" name="club-name" value="mozaika" checked><label
                                     for="footer_leto_mozaika">
                                 <h6>Тело «Мозаика»</h6>
                                 <p>Россия, Москва, 7-я Кожуховская ул.,&nbsp;9</p>

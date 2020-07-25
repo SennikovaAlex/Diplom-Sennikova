@@ -15,20 +15,22 @@ phoneInputs.addEventListener('input', () =>{
     //(/(?<!^)\+|[^\d+]/g, '');
 });
 
-const textInputs = form.querySelector('[type="text"]');
-if(textInputs !== null) {
-    textInputs.addEventListener('input', () =>{
-        textInputs.value = textInputs.value.replace(/[^А-Яа-я\s]/g, '');
+const textInputs = form.querySelectorAll('[type="text"]');
+console.log(textInputs);
+textInputs.forEach((elem) => {
+    if(elem !== null && !elem.classList.contains('promocodeText')) {
+        elem.addEventListener('input', () =>{
+            elem.value = elem.value.replace(/[^А-Яа-я\s]/g, '');
     });
 }
+})
+
 
 
 // const messageInputs = document.querySelector('#form2-message');
 // messageInputs.addEventListener('input', () =>{
 //     messageInputs.value = messageInputs.value.replace(/[^А-Яа-я\s]/g, '');
 // });
-
-
 
 form.addEventListener('submit', (event) => {
     const dataPricessing = form.querySelector('.data-processing');
@@ -40,15 +42,22 @@ form.addEventListener('submit', (event) => {
                 if (!statusMessage.textContent) {
                     statusMessage.style.cssText = 'font-size: 2rem; color: white';
                     statusMessage.textContent = 'Загрузка ...';
+                    if (form.classList.contains('black')) {
+                        statusMessage.style.cssText = 'font-size: 2rem; color: black';
+                    }
                    
                 } else {
                     statusMessage.textContent = '';
                     statusMessage.textContent = 'Загрузка ...';
                     statusMessage.style.cssText = 'font-size: 2rem; color: white';
+                    if (form.classList.contains('black')) {
+                        statusMessage.style.cssText = 'font-size: 2rem; color: black';
+                    }
                 }
         
                 const formData = new FormData(form);
                 let body = {};
+                console.log(body)
         
                 for (let val of formData.entries()) {
                     body[val[0]] = val[1];

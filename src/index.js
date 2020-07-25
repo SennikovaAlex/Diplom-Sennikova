@@ -15,8 +15,10 @@ import burgerMenu from './modules/burgerMenu';
 import calc from './modules/calc';
 import sendForms from './modules/sendForms';
 import slider from './modules/slider';
+import fotoGallary from './modules/fotoGallary';
 
 slider();
+fotoGallary();
 chooseClub();
 calc();
 burgerMenu();
