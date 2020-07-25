@@ -16,11 +16,7 @@ import calc from './modules/calc';
 import sendForms from './modules/sendForms';
 
 
-sendForms('footer_form');
-sendForms('card_order');
-sendForms('banner-form');
-sendForms('form2');
-sendForms('form1');
+
 chooseClub();
 calc();
 burgerMenu();
@@ -28,3 +24,8 @@ scrollAction();
 showModalWindow(freeVisit, freeVisitForm);
 showModalWindow(callbackBtn, callBackForm);
 actionGift();
+sendForms('footer_form');
+sendForms('card_order');
+sendForms('banner-form');
+sendForms('form2');
+sendForms('form1');
