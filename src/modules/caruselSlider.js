@@ -22,8 +22,14 @@ const caruselSlider = () => {
                       
     }
     const prevSlider = () => {        
-            left += -225
-            slide.style.cssText = `transition: all 0.2s linear 0s; min-width: 210px; margin-left: -${left}px`;
+            left += -225;
+            if (left > 0) {
+                slide.style.cssText = `transition: all 0.2s linear 0s; min-width: 210px; margin-left: -${left}px`;
+            } else {
+                left = 900;
+                slide.style.cssText = `transition: all 0.2s linear 0s; min-width: 210px; margin-left: -${left}px`;
+            }
+            
            
     }
     prev.addEventListener('click', prevSlider);
