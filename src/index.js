@@ -16,7 +16,9 @@ import calc from './modules/calc';
 import sendForms from './modules/sendForms';
 import slider from './modules/slider';
 import fotoGallary from './modules/fotoGallary';
+import caruselSlider from './modules/caruselSlider';
 
+caruselSlider();
 slider();
 fotoGallary();
 chooseClub();
