@@ -101,7 +101,6 @@ form.addEventListener('submit', (event) => {
                         
                     })
                     .catch((error) => {
-                        console.log(error);
                         const errorMassage = document.getElementById('thanks');
                         errorMassage.querySelector('h4').textContent = 'Извините';
                         errorMassage.querySelector('p').textContent = errorMessage;
