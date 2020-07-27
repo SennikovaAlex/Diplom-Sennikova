@@ -305,8 +305,8 @@
                 </div>
                 <div class="right">
                     <input type="hidden" name="form_name" value="Заказать карту">
-                    <p class="input-text"><input name="name" type="text" placeholder="Ваше имя..."></p>
-                    <p class="input-text"><input type="tel" name="phone" id="callback_form-phone"
+                    <p class="input-text"><input name="name" required type="text" placeholder="Ваше имя..."></p>
+                    <p class="input-text"><input type="tel" required name="phone" id="callback_form-phone"
                                                  placeholder="Ваш номер телефона..."></p>
                     <div class="form-bottom">
                         <p class="personal-data">
@@ -538,8 +538,8 @@
                 <h4>Обратный звонок</h4>
                 <input type="hidden" name="form_name" value=" Обратный звонок">
                 <!--  <input type="hidden" name="club" value="<?=$_GET['club-name']?>"> -->
-                <p class="input-text"><input name="name" type="text" placeholder="Ваше имя..."></p>
-                <p class="input-text"><input type="tel" name="phone" id="callback_form1-phone"
+                <p class="input-text"><input name="name" type="text" required placeholder="Ваше имя..."></p>
+                <p class="input-text"><input type="tel" name="phone" required id="callback_form1-phone"
                                              placeholder="Ваш номер телефона..."></p>
                 <p class="personal-data">
                     <input type="checkbox" id="check" class="data-processing"><label for="check">Я согласен на обработку <br>персональных
@@ -563,8 +563,8 @@
             <form name="free-visit-form" id="form2" action="#" method="post" class="modal-form">
                 <h4>Записаться на визит</h4>
                 <input type="hidden" name="form_name" value=" Записаться на визит">
-                <p class="input-text"><input name="name" type="text" placeholder="Ваше имя..."></p>
-                <p class="input-text"><input type="tel" name="phone" id="callback_form2-phone"
+                <p class="input-text"><input name="name" type="text" required placeholder="Ваше имя..."></p>
+                <p class="input-text"><input type="tel" name="phone" required id="callback_form2-phone"
                                              placeholder="Ваш номер телефона..."></p>
                 <p class="personal-data">
                     <input type="checkbox" id="check2" class="data-processing"><label for="check2">Я согласен на обработку <br>персональных
