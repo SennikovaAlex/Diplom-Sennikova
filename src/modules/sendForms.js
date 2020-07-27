@@ -130,6 +130,15 @@ form.addEventListener('submit', (event) => {
                     
         
                 const inputs = form.querySelectorAll('input');
+                if (form.classList.contains('card-order')) {
+                    document.querySelector('#card_leto_mozaika').checked = true;
+                    document.querySelector('#card_leto_schelkovo').checked = false;
+                    document.querySelector('#m1').checked = true;
+                    document.querySelector('#m2').checked = false;
+                    document.querySelector('#m3').checked = false;
+                    document.querySelector('#m4').checked = false;
+                }
+                document.querySelector('.promoHidden').value = "";
                 inputs.forEach((elem) => {
                     if (elem.type !== "radio" && elem.type !== "hidden") {
                         elem.value = ''

@@ -53,7 +53,10 @@ const calc = () => {
                 
         });
     }
-
+    const form = document.querySelector('#card_order');
+    form.addEventListener('submit', () => {
+        calc()
+    })
 }
 
 export default calc;
