@@ -138,6 +138,16 @@ form.addEventListener('submit', (event) => {
                     document.querySelector('#m3').checked = false;
                     document.querySelector('#m4').checked = false;
                     document.querySelector('.promoHidden').value = "";
+                } else if (form.classList.contains('card-order-club')) {
+                    const cards = document.querySelectorAll('[name="card-type"]');
+                    cards.forEach((elem, index) => {
+                        if (index == 0) {
+                            elem.checked = true;
+                        } else {
+                            elem.checked = false;
+                        }
+                    })
+
                 }
                 
                 inputs.forEach((elem) => {
