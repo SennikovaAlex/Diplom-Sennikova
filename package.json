@@ -124,7 +124,7 @@
     "isobject": "^3.0.1",
     "isexe": "^2.0.0",
     "json-schema-traverse": "^0.4.1",
-    "json5": "^1.0.1",
+    "json5": "^2.2.2",
     "kind-of": "^6.0.3",
     "locate-path": "^3.0.0",
     "make-dir": "^2.1.0",
